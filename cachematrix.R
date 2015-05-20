@@ -5,8 +5,7 @@
 ## This 1st Function defines a Matrix object, and stores a few parameters in Cache
  
 makeCacheMatrix <- function(x = matrix()) {
-
-m <- NULL # Applies NULL value to variable m
+        m <- NULL # Applies NULL value to variable m
         set <- function(y) { #Creates annonymous function with one variable y named set
                 x <<- y
                 m <<- NULL # This function applies values to x and m from outside the environment.
@@ -23,8 +22,7 @@ m <- NULL # Applies NULL value to variable m
         list(set = set, get = get, setsolve = setsolve, getsolve = getsolve) # Result is a List object with the result of the previuosly define variables as functions.
 }
  
- 
-## Write a short comment describing this function
+
 ## This 2nd function will solve the Matrix if its result is not on Cache, otherwise, it will just pick up the result from it avoiding tedius and repetitive computations.
  
 cacheSolve <- function(x, ...) {
